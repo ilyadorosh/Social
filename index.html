@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <link id="page_favicon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAwIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEREQAREREAERERABEREQAREREAERERABEQAAAAAREAERAAAAABEQAREAAAAAERABEQAAAAAREAERAAAAABEQAREAAAAAERABEQAAAAAREAERAAAAABEQAREREAERERABEREQAREREAERERABEREQAAAAAAAAAAD//wAAgYEAAIGBAACBgQAAj/EAAI/xAACP8QAAj/EAAI/xAACP8QAAj/EAAI/xAACBgQAAgYEAAIGBAAD//wAA" rel="icon" type="image/x-icon" />
+  </head>
+<body>
+<canvas id="myCanvas" width="200" height="300" style="border:1px solid #000000;"></canvas> 
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d"); 
+
+
+var keys = [];
+window.addEventListener("keydown",
+    function(e){
+        keys[e.keyCode] = true;
+        switch(e.keyCode){
+            case 37: case 39: case 38:  case 40: // Arrow keys
+            case 32: e.preventDefault(); break; // Space
+            default: break; // do not block other keys
+        }
+    },
+false);
+window.addEventListener('keyup',
+    function(e){
+        keys[e.keyCode] = false;
+    },
+false);var keys = [];
+window.addEventListener("keydown",
+    function(e){
+        keys[e.keyCode] = true;
+        switch(e.keyCode){
+            case 37: case 39: case 38:  case 40: // Arrow keys
+            case 32: e.preventDefault(); break; // Space
+            default: break; // do not block other keys
+        }
+    },
+false);
+window.addEventListener('keyup',
+    function(e){
+        keys[e.keyCode] = false;
+    },
+false);
+
+
+c.addEventListener("touchstart", doTouchStart, false);
+ 
+function doTouchStart(event){
+  event.preventDefault();
+  if(d=="left"||d=="right"){
+    if(event.targetTouches[0].pageY<h/2)d="up";
+    else d="down";
+  }
+  else{
+   if(event.targetTouches[0].pageX<w/2)d="left";
+    else d="right"; 
+  }
+  myServer();
+}
+
+function myServer(){
+
+  deb=String.fromCharCode(n);
+  n++;
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function(){
+      if(xmlhttp.readyState==4 && xmlhttp.status==200){
+         document.getElementById("hint").innerHTML = deb+xmlhttp.responseText; 
+      }
+  }
+  deb.charCodeAt(0);
+  xmlhttp.open("GET","http://"+
+  //www.w3schools.com/ajax/gethint.php?q="+deb,true);
+  "ec2-52-88-188-208.us-west-2.compute.amazonaws.com:8080/searching?id=5",true);
+  xmlhttp.send(); 
+}
+ var n=97;
+ var deb='a'; 
+ 
+var l = 5;
+var sa = []; 
+var cw = 10;
+var d="right";
+
+var w = c.width;
+var h = c.height;
+
+function paint()
+{
+  ctx.fillStyle = "white";
+  ctx.fillRect(0,0,w,h);
+  var nx = sa[0].x;
+  var ny = sa[0].y; 
+
+  if(d=="right")nx+=10; 
+  else if(d=="left")nx-=10; 
+  else if(d=="up")ny-=10; 
+  else if(d=="down")ny+=10; 
+ 
+var tail = sa.pop();
+tail.x = nx;
+tail.y = ny;
+sa.unshift(tail);
+
+ for (var i = 0; i < l; i++)
+ {
+    var c = sa[i]; 
+
+    ctx.fillStyle = "#FF0000"; 
+    ctx.fillRect(c.x, c.y, 10, 10);    
+    ctx.strokeStyle = "white";
+    ctx.strokeRect(c.x, c.y, 10, 10);    
+    ctx.fillText("x="+sa[4].x,5,ny);
+    ctx.fillText("d",w-10,h-10); 
+    //ctx.fillText(xmlhttp.responseText,sa[4].y,nx); 
+    ctx.fillText("y="+sa[4].y,nx,10); 
+ } 
+}  
+  
+for (var j = 0; j < l; j++){ 
+   sa.push( {'x':(l-1-j)*10,'y':100 });
+} 
+gameloop = setInterval(paint, 60);
+
+    //Lets add the keyboard controls now
+    document.addEventListener("keydown", function(e) {
+        var key = e.which;
+        //We will add another clause to prevent reverse gear
+        if (key == "37" && d != "right") d = "left";
+        else if (key == "38" && d != "down") d = "up";
+        else if (key == "39" && d != "left") d = "right";
+        else if (key == "40" && d != "up") d = "down";
+        //The snake is now keyboard controllable
+        myServer();
+    })
+
+</script> <p id="hint"></p>
+</body>
+</html>
