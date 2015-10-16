@@ -8,7 +8,7 @@ Node app in the cloud.
 Ward Cunningham wiki node.js  
 "Thinking fast and Slow" geshtall hole  
 ##flawless  
-password camera and accelerometer
+password camera and accelerometer ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 conversation with AI information gathering Facebook bot but with voice doctor GP
 
 agile  
