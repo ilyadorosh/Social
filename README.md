@@ -4,7 +4,7 @@
 Node app in the cloud.
 
 ChromoHub
-matrix style (http://cb.vu/#matrix)
+[matrix style](http://cb.vu/#matrix)
 Ward Cunningham wiki node.js
 "Thinking fast and Slow" geshtall hole
 flawless
