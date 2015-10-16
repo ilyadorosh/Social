@@ -19,6 +19,7 @@ conversation with AI information gathering Facebook bot but with voice doctor GP
  
 ```javascript
 let f=()=>{3}
+alert(s);
 ```
   
 ___
