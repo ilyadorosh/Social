@@ -11,9 +11,14 @@ Ward Cunningham wiki node.js
 password camera and accelerometer ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
 conversation with AI information gathering Facebook bot but with voice doctor GP
 
-agile  
-lean  
-XP  
+| Method        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| agile         | right-aligned | $1600 |
+| lean          | centered      |   $12 |
+| XP            | are neat      |    $1 |
+ 
+  
+  
 ___
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=UzyoT4DziQ4
 " target="_blank"><img src="http://img.youtube.com/vi/UzyoT4DziQ4/0.jpg" 
