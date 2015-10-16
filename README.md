@@ -17,7 +17,9 @@ conversation with AI information gathering Facebook bot but with voice doctor GP
 | lean          | centered      |   $12 |
 | XP            | are neat      |    $1 |
  
-  
+```javascript
+let f=()=>{3}
+```
   
 ___
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=UzyoT4DziQ4
