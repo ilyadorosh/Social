@@ -18,6 +18,10 @@ jQuery(".userpro-nostyle").hide();
 jQuery( document ).ready(function() {
 jQuery("#rate-10").children().width(65);
 jQuery("#rate-10").children().attr( "src" ,"http://nevesti.com.ua/wp-content/uploads/2015/10/Love.png");
+
+//document.getElementById("rate-10").style.textAlign = "center";
+//document.getElementById("rate-10").style.display = "block";
+//document.getElementById("rate-10").style.marginBottom = "30px";
 });
 
 
