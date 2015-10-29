@@ -22,8 +22,15 @@ jQuery("#rate-10").children().attr( "src" ,"http://nevesti.com.ua/wp-content/upl
 //document.getElementById("rate-10").style.textAlign = "center";
 //document.getElementById("rate-10").style.display = "block";
 //document.getElementById("rate-10").style.marginBottom = "30px";
+
+
 });
 
+jQuery( document ).ready(function() {
+    jQuery(".bookmarked-avatar").after( jQuery('span[title="gorgeous"]')[0] );
+    jQuery( "img[src='http://nevesti.com.ua/wp-content/plugins/userpro-rating/images/star-on.png']" ).attr( "src" ,"http://nevesti.com.ua/wp-content/uploads/2015/10/Love9.png");
+    jQuery( "img[src='http://nevesti.com.ua/wp-content/plugins/userpro-rating/images/star-off.png']" ).attr( "src" ,"http://nevesti.com.ua/wp-content/uploads/2015/10/Love0.png");
+});
 
 // ]]>
 </script>
