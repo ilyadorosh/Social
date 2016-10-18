@@ -9,6 +9,14 @@ Ward Cunningham `wiki` node.js
 "Thinking fast and Slow"  
 >geshtall hole  
 
+not only links 
+```javascript
+</a href="http://wikipedia.org/linkoln">Linkoln</a>
+<p>Linkoln is the n th president of the United States</p>
+insert into the database words, numbers 
+PageRank based on the words semantic structures. (PlainTextBackRub)
+```
+
 ##flawless  
 password camera and accelerometer ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
 conversation with AI information gathering Facebook bot but with voice doctor GP
