@@ -1,6 +1,22 @@
 # Social
 
 [![Join the chat at https://gitter.im/ilyadorosh/Social](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ilyadorosh/Social?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  
+
+##Fundamental things
+Human attention
+ Advertising (cost of Impression)
+ Methods of aquiring
+  Anticipation
+  Positive reinforcement
+Time
+Resources
+
+##Where am I in it all?
+
+Set priorities:
+ 1. llab
+ 
+
 **Node** app in the *cloud*.
 
 #ChromoHub  
@@ -17,7 +33,10 @@ insert into the database words, numbers
 PageRank based on the words semantic structures. (PlainTextBackRub)
 ```
 
-##flawless  
+##right incentives market investment trading
+Some people are involved not in the doing, but directing the flow of attention of masses. What value does it add?
+
+simplifiyng things
 password camera and accelerometer ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
 conversation with AI information gathering Facebook bot but with voice doctor GP
 
