@@ -11,8 +11,8 @@ Ward Cunningham `wiki` node.js
 
 not only links 
 ```javascript
-</a href="http://wikipedia.org/linkoln">Linkoln</a>
-<p>Linkoln is the n th president of the United States</p>
+</a href="http://wikipedia.org/wiki/Abraham_Lincoln">Lincoln</a>
+<p>Lincoln is the n th president of the United States</p>
 insert into the database words, numbers 
 PageRank based on the words semantic structures. (PlainTextBackRub)
 ```
