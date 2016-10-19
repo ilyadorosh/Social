@@ -8,8 +8,27 @@ Human attention
  Methods of aquiring
   Anticipation
   Positive reinforcement
+  
+  Google important relevance
+  Twitter important popularity
+  Facebook important friends
+  Snapchat closer connection, more dedicated communication
+  
+  
+  #importance and connections
+  more InCON => imp for more people => more imp for you statistically
+  closer connection => more important
+  number of connections = const
+  
+  
+  
+  
 Time
+ automation tools? like:
+
 Resources
+ Uber
+ AirBnB
 
 ##Where am I in it all?
 
@@ -31,6 +50,38 @@ not only links
 <p>Lincoln is the n th president of the United States</p>
 insert into the database words, numbers 
 PageRank based on the words semantic structures. (PlainTextBackRub)
+
+webpage is atomic currently
+split it!
+set categories
+set priorities sort
+filter
+combine
+
+batch google search api
+several times iterations
+filter mutations and recombinations
+
+knowledge graph
+how entities relate to each other 
+learning node weight change
+keywords is does 
+
+My dress is red.
+(NP (PRP$ My) (NN dress))
+    (VP (VBZ is)
+      (ADJP (JJ red)))
+      
+nmod:poss(dress-2, My-1)
+nsubj(red-4, dress-2)
+cop(red-4, is-3)
+root(ROOT-0, red-4)
+
+=>
+
+me:{
+ poss:[{name: dress, properties: {color: red}}]
+}
 ```
 
 ##right incentives market investment trading
